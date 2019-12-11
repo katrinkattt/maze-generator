@@ -1,0 +1,28 @@
+.block{
+    height: 25px;
+    width: 25px;
+    transition: all .5s;
+    background-color: red;   
+}
+.cub{
+    height: 20px;
+    width: 20px;
+    background-color: black;
+}
+.table{
+    border: 2px solid #17171a;
+    
+    background:linear-gradient(45deg, #fa3365, #3379fa);
+}
+td{
+    height: 40px;
+    width: 40px;
+}
+.wall{
+    border: #237c54;
+}
+.cursor{
+    height: 30px;
+    width: 30px;
+    background-color: red;
+}
