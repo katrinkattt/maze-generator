@@ -7,30 +7,22 @@ $(function(){
       var rand = border[Math.floor(Math.random() * border.length)];
       var stroke = [[i], [l]];
       $('<td>', {id: i+'ryd'+l,  style: 'border'+rand + ' 5px solid #17171a;'}).appendTo(table);
-      // console.log(stroke[0, 3]);
-      
     }
   }
 
   $('<div class="block" id="block"></div>').appendTo(table);
 
   var td = $('td').attr('class', 'wall');
-  // или так  var arr = document.getElementsByClassName('wall');
-  
   var arr = $('.wall');
+  
   arr[0].append(block);
 
   // ищет и достает ID  и все ломает :/
-  $('#table > td').each( function(inddex, elem){
-    // console.log(  $(elem).attr('id'));
-
-  })
+//   $('#table > td').each( function(inddex, elem){
+//     // console.log(  $(elem).attr('id'));
+//   })
   
   let z = 0;
-  // let room = (idishnik).style.border;
-  // console.log(room);
-  
-  
   $(document).keydown(function(e){
     let positionID = '#'+$(arr[z]).attr('id');
     switch(e.which){
